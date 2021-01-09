@@ -1,15 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-node',
-  templateUrl: './node.component.html',
-  styleUrls: ['./node.component.scss']
+  template: `<span>node</span>`,
+  styles: [``],
 })
 export class NodeComponent implements OnInit {
+  @Input() row: number;
+  @Input() col: number;
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }
